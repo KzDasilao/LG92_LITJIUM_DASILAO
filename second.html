@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+</head>
+<body>
+<img id="image" src="nj.jpg" width="300" height="300"style="border:2px solid black" alt="Original Image">
+<br>
+<button onclick="changeImage()">Change Image</button>
+<button onclick="revertImage()">Revert Image</button>
+<script>
+    function changeImage(){
+        document.getElementById("image").src= "ls.webp";
+    }
+    function revertImage(){
+        document.getElementById("image").src= "nj.jpg";
+    }
+</script>
+</body>
+</html>
